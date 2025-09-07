@@ -16,7 +16,7 @@ function generateQuote(event) {
   let apiKey = "990t50744fc2a02348640f8o4b9c6621";
   let prompt = `User instructions: Generate a beautiful quote about ${instructionsInput.value} in a motivational vibe`;
   let context =
-    "You are a quote expert and love to write a nice quotes to inspire people. Please pay attention to the punctuation in the text, avoiding the use of ';' in the middle of sentences. You have to generate maximum 2 lines quote. Make sure to follow the user instructions. Sign the quote with 'SheCodes AI' inside a <strong></strong> element at the end of the quote.";
+    "You are a quote expert and love to write a nice quotes to inspire people. Please pay attention to the punctuation in the text, avoiding the use of ';' in the middle of sentences. You have to generate maximum 2 lines quote. Make sure to follow the user instructions. Sign the quote with 'SheCodes AI' inside a <strong></strong> element at the end of the quote in another paragraph.";
 
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let quoteElement = document.querySelector("#quote");
