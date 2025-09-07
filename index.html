@@ -13,23 +13,29 @@
   <body>
     <div class="container">
       <header>
-        <h1>Welcome to Ai quotes generator</h1>
+        <h1>Welcome to Ai motivational quotes generator</h1>
       </header>
 
       <main>
-        <form id="quote-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the quote"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="quote" id="quote"></div>
+        <div class="form-container">
+          <form id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the quote"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">
+            Type someting like : flowes, wine or love. And get a motivational
+            quote!
+          </div>
+        </div>
+        <div class="quote hidden" id="quote"></div>
       </main>
 
       <footer>
