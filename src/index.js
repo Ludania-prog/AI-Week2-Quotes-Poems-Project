@@ -1,8 +1,6 @@
 function displayQuote(response) {
   // response.data.answer
 
-  console.log("quote generated");
-
   new Typewriter("#quote", {
     strings: response.data.answer,
     autoStart: true,
@@ -24,10 +22,6 @@ function generateQuote(event) {
   let quoteElement = document.querySelector("#quote");
   quoteElement.classList.remove("hidden");
   quoteElement.innerHTML = `Generating a nice quote fou you about ${instructionsInput.value} 😊`;
-
-  console.log("Generating quote");
-  console.log(`Prompt:${prompt}`);
-  console.log(`Context:${context}`);
 
   // Make a call to API
 
